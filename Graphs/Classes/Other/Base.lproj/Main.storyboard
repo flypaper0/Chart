@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Maison Neue Demi.otf">
+            <string>MaisonNeue-Demi</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Chart View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChartViewController" customModule="Graphs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33Q-QO-rLo">
+                                <rect key="frame" x="0.0" y="468.5" width="375" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl3-30-QTV">
+                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="MaisonNeue-Demi" family="Maison Neue" pointSize="12"/>
+                                        <state key="normal" title="1H">
+                                            <color key="titleColor" red="0.12" green="0.12" blue="0.12" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timescalePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdZ-hM-LCk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1H-uJ-QMX">
+                                        <rect key="frame" x="62.5" y="0.0" width="62.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="MaisonNeue-Demi" family="Maison Neue" pointSize="12"/>
+                                        <state key="normal" title="1D">
+                                            <color key="titleColor" red="0.12" green="0.12" blue="0.12" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timescalePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YeL-i2-CnQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cM-Ou-zbN">
+                                        <rect key="frame" x="125" y="0.0" width="62.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="MaisonNeue-Demi" family="Maison Neue" pointSize="12"/>
+                                        <state key="normal" title="1W">
+                                            <color key="titleColor" red="0.12" green="0.12" blue="0.12" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timescalePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1PB-5v-BiP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAN-VY-TDz">
+                                        <rect key="frame" x="187.5" y="0.0" width="62.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="MaisonNeue-Demi" family="Maison Neue" pointSize="12"/>
+                                        <state key="normal" title="1M">
+                                            <color key="titleColor" red="0.12" green="0.12" blue="0.12" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timescalePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVr-uF-FHj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUB-WG-lOw">
+                                        <rect key="frame" x="250" y="0.0" width="62.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="MaisonNeue-Demi" family="Maison Neue" pointSize="12"/>
+                                        <state key="normal" title="1Y">
+                                            <color key="titleColor" red="0.12" green="0.12" blue="0.12" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timescalePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mkb-vi-OyR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRN-3E-t6A">
+                                        <rect key="frame" x="312.5" y="0.0" width="62.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="MaisonNeue-Demi" family="Maison Neue" pointSize="12"/>
+                                        <state key="normal" title="ALL">
+                                            <color key="titleColor" red="0.12" green="0.12" blue="0.12" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timescalePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2gS-VS-yBs"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-Ps-zJd">
+                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="4"/>
+                                        <color key="backgroundColor" red="1" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="4" id="A0N-d8-q2I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="r1H-uJ-QMX" firstAttribute="leading" secondItem="yl3-30-QTV" secondAttribute="trailing" id="3zc-t7-AgZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="rUB-WG-lOw" secondAttribute="bottom" id="6BH-xP-Img"/>
+                                    <constraint firstAttribute="bottom" secondItem="GAN-VY-TDz" secondAttribute="bottom" id="6fk-jQ-33b"/>
+                                    <constraint firstItem="hJH-Ps-zJd" firstAttribute="leading" secondItem="33Q-QO-rLo" secondAttribute="leading" id="AS1-Rp-HYs"/>
+                                    <constraint firstItem="hJH-Ps-zJd" firstAttribute="top" secondItem="33Q-QO-rLo" secondAttribute="top" id="BRj-IW-IKL"/>
+                                    <constraint firstItem="r1H-uJ-QMX" firstAttribute="width" secondItem="yl3-30-QTV" secondAttribute="width" id="DZR-af-mOn"/>
+                                    <constraint firstItem="rUB-WG-lOw" firstAttribute="top" secondItem="33Q-QO-rLo" secondAttribute="top" id="MOz-Bd-3lH"/>
+                                    <constraint firstAttribute="trailing" secondItem="HRN-3E-t6A" secondAttribute="trailing" id="Pra-Ay-Aia"/>
+                                    <constraint firstItem="HRN-3E-t6A" firstAttribute="width" secondItem="yl3-30-QTV" secondAttribute="width" id="ReN-d0-VYR"/>
+                                    <constraint firstItem="HRN-3E-t6A" firstAttribute="top" secondItem="33Q-QO-rLo" secondAttribute="top" id="T49-Uw-VG9"/>
+                                    <constraint firstItem="hJH-Ps-zJd" firstAttribute="width" secondItem="yl3-30-QTV" secondAttribute="width" id="U1I-dn-YTO"/>
+                                    <constraint firstItem="5cM-Ou-zbN" firstAttribute="leading" secondItem="r1H-uJ-QMX" secondAttribute="trailing" id="XF0-pG-dXF"/>
+                                    <constraint firstAttribute="bottom" secondItem="HRN-3E-t6A" secondAttribute="bottom" id="Xkx-OT-o7z"/>
+                                    <constraint firstItem="rUB-WG-lOw" firstAttribute="leading" secondItem="GAN-VY-TDz" secondAttribute="trailing" id="Ylz-KD-S9l"/>
+                                    <constraint firstAttribute="bottom" secondItem="yl3-30-QTV" secondAttribute="bottom" id="Zdz-YC-NmP"/>
+                                    <constraint firstItem="r1H-uJ-QMX" firstAttribute="top" secondItem="33Q-QO-rLo" secondAttribute="top" id="a22-KK-PwF"/>
+                                    <constraint firstAttribute="bottom" secondItem="r1H-uJ-QMX" secondAttribute="bottom" id="bl8-2n-ehM"/>
+                                    <constraint firstItem="5cM-Ou-zbN" firstAttribute="top" secondItem="33Q-QO-rLo" secondAttribute="top" id="bur-aj-Qrw"/>
+                                    <constraint firstItem="HRN-3E-t6A" firstAttribute="leading" secondItem="rUB-WG-lOw" secondAttribute="trailing" id="cZV-ct-w8q"/>
+                                    <constraint firstItem="GAN-VY-TDz" firstAttribute="width" secondItem="yl3-30-QTV" secondAttribute="width" id="eH1-kp-BYt"/>
+                                    <constraint firstAttribute="bottom" secondItem="5cM-Ou-zbN" secondAttribute="bottom" id="fWC-Kq-Pk0"/>
+                                    <constraint firstItem="rUB-WG-lOw" firstAttribute="width" secondItem="yl3-30-QTV" secondAttribute="width" id="go3-9Q-e5o"/>
+                                    <constraint firstItem="yl3-30-QTV" firstAttribute="leading" secondItem="33Q-QO-rLo" secondAttribute="leading" id="j6o-68-udL"/>
+                                    <constraint firstItem="yl3-30-QTV" firstAttribute="top" secondItem="33Q-QO-rLo" secondAttribute="top" id="jHP-AH-g4x"/>
+                                    <constraint firstItem="GAN-VY-TDz" firstAttribute="leading" secondItem="5cM-Ou-zbN" secondAttribute="trailing" id="kDp-Wp-oQ1"/>
+                                    <constraint firstItem="5cM-Ou-zbN" firstAttribute="width" secondItem="yl3-30-QTV" secondAttribute="width" id="qc2-Sy-Nq0"/>
+                                    <constraint firstItem="GAN-VY-TDz" firstAttribute="top" secondItem="33Q-QO-rLo" secondAttribute="top" id="rdr-us-FGD"/>
+                                    <constraint firstAttribute="height" constant="38" id="v3o-pW-9GV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDU-ph-jLC" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="198.5" width="375" height="270"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="k9L-Uk-fe8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ca2-J4-h0c">
+                                <rect key="frame" x="0.0" y="506.5" width="375" height="160.5"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xvo-dJ-JVP">
+                                        <rect key="frame" x="87.5" y="66.5" width="200" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="VtM-42-KAP"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Yield"/>
+                                            <segment title="Price"/>
+                                        </segments>
+                                        <color key="tintColor" red="1" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="fieldValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hgg-Xf-qpO"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="xvo-dJ-JVP" firstAttribute="centerX" secondItem="Ca2-J4-h0c" secondAttribute="centerX" id="sd4-cn-dRe"/>
+                                    <constraint firstItem="xvo-dJ-JVP" firstAttribute="centerY" secondItem="Ca2-J4-h0c" secondAttribute="centerY" id="tTf-Fd-1WJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ca2-J4-h0c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1o4-ql-Cad"/>
+                            <constraint firstItem="33Q-QO-rLo" firstAttribute="top" secondItem="gDU-ph-jLC" secondAttribute="bottom" id="4lo-Lg-uBn"/>
+                            <constraint firstItem="gDU-ph-jLC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ExN-3w-IIJ"/>
+                            <constraint firstItem="33Q-QO-rLo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ohp-ET-Ajf"/>
+                            <constraint firstItem="gDU-ph-jLC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Oz7-6P-FoH"/>
+                            <constraint firstItem="Ca2-J4-h0c" firstAttribute="top" secondItem="33Q-QO-rLo" secondAttribute="bottom" id="o0f-ds-n62"/>
+                            <constraint firstItem="gDU-ph-jLC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p1F-c0-kVT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ca2-J4-h0c" secondAttribute="trailing" id="t51-AB-In0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ca2-J4-h0c" secondAttribute="bottom" id="tWe-hp-GTw"/>
+                            <constraint firstItem="33Q-QO-rLo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wVd-5Z-9Ca"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="gDU-ph-jLC" id="RQy-AK-795"/>
+                        <outlet property="timescaleConstraint" destination="AS1-Rp-HYs" id="keK-vg-a1T"/>
+                        <outlet property="timescaleView" destination="hJH-Ps-zJd" id="gdH-Yr-EYZ"/>
+                        <outletCollection property="timescaleButtons" destination="yl3-30-QTV" collectionClass="NSMutableArray" id="7do-Jh-dW6"/>
+                        <outletCollection property="timescaleButtons" destination="r1H-uJ-QMX" collectionClass="NSMutableArray" id="oHm-Az-Xua"/>
+                        <outletCollection property="timescaleButtons" destination="5cM-Ou-zbN" collectionClass="NSMutableArray" id="8Pe-Wz-Jmq"/>
+                        <outletCollection property="timescaleButtons" destination="GAN-VY-TDz" collectionClass="NSMutableArray" id="QpD-al-epO"/>
+                        <outletCollection property="timescaleButtons" destination="rUB-WG-lOw" collectionClass="NSMutableArray" id="M54-ji-wT9"/>
+                        <outletCollection property="timescaleButtons" destination="HRN-3E-t6A" collectionClass="NSMutableArray" id="4QQ-pw-4IN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>
